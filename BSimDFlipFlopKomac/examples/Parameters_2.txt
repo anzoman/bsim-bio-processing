@@ -1,0 +1,20 @@
+//Simulation with cell division and movement
+//Simulation incomplete due to longer simulation time
+Parameters:
+
+//Common
+WITH_GROWTH = true;
+//Growth and division for BSimDBacterium has been disabled due to a memory leak and time constraints..
+//Brownian movement was enabled for all
+
+
+export = true;
+simDimensions = new ArrayList<>(Arrays.asList(100., 100., 1.));
+initialPopulation = 100;
+populationRatio = 0.2;
+diffusivity = 80;
+fixedBounds = false;
+
+//Simulation
+sim.setDt(0.25);
+sim.setSimulationTime(43200);

@@ -1,0 +1,14 @@
+Parameters:
+
+//Common
+WITH_GROWTH = false;
+export = true;
+simDimensions = new ArrayList<>(Arrays.asList(100., 100., 1.));
+initialPopulation = 100;
+populationRatio = 0.2;
+diffusivity = 80;
+fixedBounds = false;
+
+//Simulation
+sim.setDt(0.25);
+sim.setSimulationTime(43200);
